@@ -1,0 +1,162 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 2px;
+}
+/********** TYPOGRAPHY ***********/
+h1, h2, h3 {
+    font-family: 'Vidaloka', serif;
+}
+
+p {
+    font-family: 'Assistant', sans-serif;
+}
+
+.iM {
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+}
+
+.s {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12rem;
+}
+
+.amlafo, .mansa{
+    font-family: 'Vidaloka', serif;
+}
+
+.mansa {
+    position: relative;
+    left: 150px;
+    top: -80px;
+}
+
+.amlafo {
+    position: relative;
+    left: -10px;
+    top: -20px;
+}
+
+.intro p {
+    position: relative;
+    left: 320px;
+    
+}
+
+.er {
+    font-size: 25px;
+    
+}
+#profileSectionTwo p {
+    font-family: 'Assistant', sans-serif;
+    color: rgb(70, 56, 56);
+}
+
+/********* PROFILE SECTION **********/
+/* PARALLAX */
+#profileSectionOne{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    background-attachment: fixed;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.bgOne::after {
+    background-image: url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1181&q=80);
+    
+}
+
+/* STATIC SECTION OF THE PARLLAX */
+.static {
+    padding: 100px 20%;
+    margin: 20px 0 0;
+    background-color: rgba(38, 165, 197);
+    
+}
+
+/* SKILLS SECTION */
+#skillsSection {
+    text-align: center;
+    /* margin-bottom: 100px; */
+}
+
+#skillsSection h1 {
+    padding: 30px;
+}
+
+
+/* **************SECTION TWO************** */
+
+
+/* PORTFOLIO SECTION */
+#portfolioSection {
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgb(218, 228, 231);
+    color: rgb(70, 56, 56);
+}
+
+
+/* OTHER INTEREST SECTION */
+#otherInterestsSection {
+    text-align: center;
+    list-style-type: none;
+    /* background-image: ; */
+}
+
+/* ***** FOOTER SECTION **** */
+#footerSectionOne {
+    text-align: center;
+    
+    padding: 100px 0;
+}
+
+/* FOOTER SECTION ONE */
+#footerSectionOne h3 {
+    display: inline-block;
+    margin-left: 60px;
+    top: -20px;
+    position: relative;
+}
+
+/* FOOTER SECTION TWO */
+#footerSectionTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* RESUME, CONTACT LINKS AND THE "UP" BUTTON SECTION */
+.resumeAndUpButton {
+    margin: 50px 30px;
+}
+
+/* COPY RIGHT SECTION */
+#copyrightSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 100px;
+}
