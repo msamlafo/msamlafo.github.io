@@ -4,7 +4,8 @@ body, html {
 }
 
 #wrapper {
-    height: 100vh;
+    /* height: 100vh; */
+    /* width: 100vw; */
     overflow-x: hidden;
     perspective: 2px;
 }
@@ -13,7 +14,7 @@ h1, h2, h3 {
     font-family: 'Vidaloka', serif;
 }
 
-p {
+p, h4 {
     font-family: 'Assistant', sans-serif;
 }
 
@@ -23,18 +24,27 @@ p {
 }
 
 .s {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Vidaloka', serif;
     font-size: 12rem;
 }
 
-.amlafo, .mansa{
+.amlafo, .mansa, .intro p {
     font-family: 'Vidaloka', serif;
 }
 
+#profileSectionTwo p, #portfolioSectionUi p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: rgb(70, 56, 56);
+}
+
+/* *************Styling SectionOne********* */
+
+
 .mansa {
     position: relative;
-    left: 150px;
-    top: -80px;
+    left: 210px;
+    top: -70px;
 }
 
 .amlafo {
@@ -46,117 +56,263 @@ p {
 .intro p {
     position: relative;
     left: 320px;
-    
+    font-size: 38px;
 }
 
 .er {
-    font-size: 25px;
+    font-size: 50px;
     
 }
-#profileSectionTwo p {
-    font-family: 'Assistant', sans-serif;
-    color: rgb(70, 56, 56);
+
+.profilePicture {
+    width: 200px;
+    position: relative;
+    left: 470px;
+    top: 50px;
+}
+
+.iconHtml{
+    position: relative;
+    left: 170px;
+    top: 100px;
+}
+
+.iconCss{
+    position: relative;
+    left: 190px;
+    top: 230px;
+}
+
+.iconJs {
+    position: relative;
+    left: 300px;
+    top: 230px;
+}
+
+.iconBootstrap {
+    position: relative;
+    left: 330px;
+    top: 100px;
 }
 
 /********* PROFILE SECTION **********/
+
+.intro {
+    /* color: black; */
+    left: 200px;
+    position: relative;
+    top: 100px;
+    /* z-index: 3; */
+}
+
 /* PARALLAX */
 #profileSectionOne{
     position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    /* height: 100vh; */
+    color: black;
     text-shadow: 0 0 5px #000;
+}
+
+.parallax {
+    height: 100vh;
     background-attachment: fixed;
-}
-
-.parallax::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
-}
-
-.bgOne::after {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1181&q=80);
-    
 }
+  
 
-/* STATIC SECTION OF THE PARLLAX */
+
+/* STATIC SECTION OF THE PARLLAX */  
 .static {
-    padding: 100px 20%;
-    margin: 20px 0 0;
-    background-color: rgba(38, 165, 197);
-    
-}
-
-/* SKILLS SECTION */
-#skillsSection {
-    text-align: center;
-    /* margin-bottom: 100px; */
-}
-
-#skillsSection h1 {
-    padding: 30px;
+    padding: 100px 25%;
+    background-color: rgb(38, 165, 197);
 }
 
 
-/* **************SECTION TWO************** */
+/* Navbar */
+
+.navbar {
+    position: fixed;
+}
+
+nav.active {
+    background-color: rgba(3, 45, 61, 0.85);
+    color: white;
+}
 
 
-/* PORTFOLIO SECTION */
-#portfolioSection {
-    text-align: center;
-    padding: 100px 0;
+/* ***************STYLING SECTION 2**************** */
+
+/** PORTFOLIO SITE SECTION **/
+#portfolioSectionSites {
     background-color: rgb(218, 228, 231);
     color: rgb(70, 56, 56);
+}    
+
+.sectionTemplate {
+    text-align: center;
+    padding: 100px 50px 0;
+    height: 100vh;
+}    
+
+/* PORTFOLIO ---SITE SECTION ITEMS */
+
+.box-1 {
+    order: 5;
+}    
+
+.box-2 {
+    order: 4;
+}    
+
+.box-3 {
+     order: 3;
+}     
+
+.box-4{
+    order: 2;
+}   
+
+.box-5 {
+    order: 6;
 }
 
-
-/* OTHER INTEREST SECTION */
-#otherInterestsSection {
-    text-align: center;
-    list-style-type: none;
-    /* background-image: ; */
+.box-6 {
+    order: 1;
 }
 
-/* ***** FOOTER SECTION **** */
-#footerSectionOne {
-    text-align: center;
+.portfolioImageSet {
+    width: 200px;
     
-    padding: 100px 0;
+}    
+
+/* PORTFOLIO ---UI IMAGES */
+@media(min-width: 768px){
+.flexContainer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}    
 }
+
+.flexContainer div {
+    border: solid #ccc 5px;
+    padding: 15px;
+    flex-basis: 5%; 
+    margin: 50px;
+}    
+
+#portfolioSectionUi {
+    background-color: rgb(38, 165, 197);
+    padding-bottom: 100px;
+}    
+
+#portfolioSectionSites h1, #portfolioSectionUi h1, #footerSectionOne h1{
+    padding-bottom: 70px;
+    color: rgb(70, 56, 56);
+
+}    
+
+.uiImages {
+    width: 200px;
+    /* height: 175px; */
+    margin-left: 20px;
+    margin-bottom: 50px;
+    
+}    
+
+
 
 /* FOOTER SECTION ONE */
-#footerSectionOne h3 {
+
+
+/* #footerSectionOne {
+    background-color: rgba(38, 165, 197);
+    padding: 100px 300px 0;
+    
+} */
+
+#ctaIcon {
     display: inline-block;
-    margin-left: 60px;
-    top: -20px;
-    position: relative;
+    color: rgb(38, 165, 197)
 }
+
+#footerSectionOne h1 {
+    display: inline-block;
+    left: 60px;
+    position: relative;
+    
+}
+
+.submitBtn {
+    padding: 20px 30px;
+}
+
+
 
 /* FOOTER SECTION TWO */
 #footerSectionTwo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 100px 30%;
+
 }
 
-/* RESUME, CONTACT LINKS AND THE "UP" BUTTON SECTION */
-.resumeAndUpButton {
-    margin: 50px 30px;
+input {
+    padding: 1em;
+    width: 84.4vw;
+    background: #ccc;
+    color: #410a12;
+    /* font-family: 'Comfortaa', cursive; */
+    font-style: bold;
+    font-size: 1em;
+    display:flex;
+    /* align-items: flex-start; */
+    margin: 50px -273px;
 }
+
+
+/* RESUME BUTTON */
+/* .resumeBtn {
+    background: #34d9b8;
+    background-image: -webkit-linear-gradient(top, #34d9b8, #7f2bb8);
+    background-image: -moz-linear-gradient(top, #34d9b8, #7f2bb8);
+    background-image: -ms-linear-gradient(top, #34d9b8, #7f2bb8);
+    background-image: -o-linear-gradient(top, #34d9b8, #7f2bb8);
+    background-image: linear-gradient(to bottom, #34d9b8, #7f2bb8);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .resumeBtn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  } */
+
+/* CONTACT ME SECTION */
+
 
 /* COPY RIGHT SECTION */
 #copyrightSection {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 0 100px;
+    margin: 100px  50px 100px;
+    background-color: rgb(38, 165, 197);
 }

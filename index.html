@@ -17,22 +17,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-        <!-- GOOGLE FONT -->
-        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Raleway:wght@300&family=Sacramento&family=Vidaloka&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Raleway:wght@300&family=Sacramento&family=Vidaloka&display=swap"
+        rel="stylesheet">
 
     <!-- CSS STYLESHEET -->
     <link rel="stylesheet" ref="stylesheet" href="styles.css">
 
 
-    <title>MS Portfolio</title>
+    <title>MDS Portfolio</title>
 </head>
 
 <body>
-    <section id="wrapper" class="overlay">
+    <section id="wrapper">
 
         <!-- Site navigation -->
 
-        <nav class="navbar sticky-top navbar-expand-lg  navbar-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,10 +47,10 @@
                         <a class="nav-link" href="#profileSection">PROFILE</a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-link" href="#portfolioSection">PORTFOLIO</a>
+                        <a class="nav-link" href="#portfolioSectionSites">PORTFOLIO</a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-link" href="#otherInterestsSection">OTHER INTERESTS</a>
+                        <a class="nav-link" href="#portfolioSectionUin">UI</a>
                     </li>
                     <li class="nav-items">
                         <a class="nav-link" href="#footerOneSection">CONTACT ME</a>
@@ -57,21 +59,31 @@
         </nav>
 
         <!-- Header section with Name display -->
-        <section class='parallax bgOne' id="profileSectionOne">
-            <header>
-                <!-- Parallax -->
+        <!-- Parallax -->
+        <section  id="profileSectionOne">
+            <div class="parallax">
+
                 <div class="intro">
                     <h1 class="iM">I'm</h1>
-                    <h1><span class="mansa ">Mansa</span> <span class="s">S</span> <span class="amlafo">amlafo</span></h1>
+                    <h1><span class="mansa ">Mansa</span> <span class="s">S</span> <span class="amlafo">amlafo</span>
+                    </h1>
                     <p>a develop<em class="er">er</em></p>
+                    <img class="profilePicture" src="assets/circle-croppedMansaProfile.png" alt="Mansa-img">
+
+                    <!-- icons below this line. HTML5, CSS, JAVASCRIPT, BOOTSTRAP -->
+                    <span class="fab fa-html5 fa-4x iconHtml"></span>
+                    <span class="fab fa-css3 fa-4x iconCss"></span>
+                    <span class="fab fa-js fa-4x iconJs"></span>
+                    <span class="fab fa-bootstrap fa-4x iconBootstrap"></span>
                 </div>
 
-                </div>
-            </header>
+            </div>
         </section>
-        <section class="static">
+        <section class="static"> 
+            <!--  STATIC SECTION OF THE PARLLAX. Padding on this section and 100vh on the parallax class  causes the static section to scroll into the parallax  -->
             <section id="profileSectionTwo">
-                <p>A few months ago I started to learn Web-Development and I am loving it. I am currently studying at
+                <p>After a attending a free HTML and CSS introductory session with Google, I fell in love with coding. I
+                    am currently studying at
                     Eleven Fifty Academy with an expected graduation date of February. In my free time I love to
                     crochet,
                     bake and eat.
@@ -80,39 +92,159 @@
                 </p>
             </section>
 
-            <br />
+            <!-- <br /> -->
 
 
             <!-- Section One - Skills-->
 
-            <section class="static sectionTemplate" id="skillsSection">
-                <h1>SKILLS</h1>
-                <!-- icons below this line. HTML5, CSS, JAVASCRIPT, BOOTSTRAP -->
-                    
-                        <span class="fab fa-html5 fa-3x skillsIcon"></span>
+            <!-- <section class="static sectionTemplate" id="skillsSection"> -->
+            <!-- <h1>SKILLS</h1> -->
+            <!-- icons below this line. HTML5, CSS, JAVASCRIPT, BOOTSTRAP -->
+            <!-- 
+                <span class="fab fa-html5 fa-3x skillsIcon1"></span>
 
-                        <span class="fab fa-css3 fa-3x skillsIcon"></span>
+                <span class="fab fa-css3 fa-3x skillsIcon2"></span>
 
-                        <span class="fab fa-js fa-3x skillsIcon"></span>
+                <span class="fab fa-js fa-3x skillsIcon3"></span>
 
-                        <span class="fab fa-bootstrap fa-3x skillsIcon"></span>
+                <span class="fab fa-bootstrap fa-3x skillsIcon4"></span> -->
 
-                    </div>
-                </div>
-            </section>
+            
         </section>
+    </section>
 
-        <!-- Section Two - Portfolio -->
-        <section class="sectionTemplate" id=portfolioSection>
-            <h1>PORTFOLIO</h1>
-            <p>CSS CREATURE</p>
-            <p>STATIC LAYOUT</p>
-            <p>UX/UI</p>
-            <p>POSAM NKOSO MICROFINANCE</p>
-        </section>
+    <!-- SECTION TWO -->
+    <!--PORTFOLIO SITE SECTION-->
+    <section class="sectionTemplate" id=portfolioSectionSites>
+        <h1>PORTFOLIO</h1>
+        <div class="flexContainer">
 
-        <!-- Section Three - Other Interests -->
-        <section class="sectionTemplate" id="otherInterestsSection">
+            <div class="box-1">
+                <h5>CSS CREATURE</h5>
+                <a href="https://codepen.io/mansasamlafo/pen/jOqWpZq" target="blank"><img class="portfolioImageSet"
+                        src="assets/cssCreature.png" alt=""></a>
+            </div>
+
+            <div class="box-2">
+                <h5>STATIC LAYOUT</h5>
+                <a href="https://msamlafo.github.io/static-layout/"><img class="portfolioImageSet" src="assets/kast.png"
+                        alt="kast-site"></a>
+            </div>
+
+            <div class="box-3">
+                <h5>bikembassy SITE</h5>
+                <a href="https://msamlafo.github.io/bikembassy/"><img class="portfolioImageSet"
+                        src="assets/bikembassy.png" alt="bikembassy-site"></a>
+            </div>
+
+            <div class="box-4">
+                <h5>POSAM NKOSO MICROFINANCE</h5>
+                <a href="https://msamlafo.github.io/PosamNkosuo/"><img class="portfolioImageSet"
+                        src="assets/posamNkosuo.png" alt="posam-site"></a>
+            </div>
+
+            <div class="box-5">
+                <h5>GHIBLI API</h5>
+                <a href="https://msamlafo.github.io/apiProject-1/"><img class="portfolioImageSet"
+                        src="./assets/gbibliApi.png" alt="ghibli-API"></a>
+            </div>
+
+            <div class="box-6">
+                <h5>MY FIRST PROFILE SITE</h5>
+                <a href="https://mysite-b0436.firebaseapp.com/"><img class="portfolioImageSet" src="assets/firstProfileSite.png" alt="First-Profile-Site"></a>
+            </div>
+        </div>
+
+        </br>
+    </section>
+
+    <!-- PORTFOLIO UI SECTION -->
+    <section class="sectionTemplate" id="portfolioSectionUi">
+        <h1>UI</h1>
+        <p>This is me trying my hands on UI</p>
+        <!-- <img src="/assets/ui/404pageDailyUI.pdf" alt="404-img"> -->
+        <img class="uiImages" src="assets/ui/onOffSwitchDailyUi.png" type="">
+        <img class="uiImages" src="assets/ui/ecommerceDailyUi.png" type="">
+        <img class="uiImages" src="assets/ui/calculatorDailyUi.png" type="">
+        <img class="uiImages" src="assets/ui/flashMessageDailyUi.png" type="">
+        <img class="uiImages" src="assets/ui/SignUpFormDailyUI.png" type="">
+        <img class="uiImages" src="assets/ui/yarnBogoSaleDailyUi.png" type="">
+
+        <img class="uiImages" src="assets/ui/userProfileDailyUi.png" type="">
+        <img class="uiImages" src="assets//ui/countDownTimerDailyUi.png" type="">
+
+        <img class="uiImages" src="assets/ui/creditCardSignOutPageDailyUi.png" type="">
+        <img class="uiImages" src="assets/ui/appIconDailyUi.png" type="">
+
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+
+            </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active uiImages">
+                <img src="./assets/ui/onOffSwitchDailyUi.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/ecommerceDailyUi.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/calculatorDailyUi.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/flashMessageDailyUi.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/SignUpFormDailyUI.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/yarnBogoSaleDailyUi.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/userProfileDailyUi.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/countDownTimerDailyUi.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/creditCardSignOutPageDailyUi.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item uiImages">
+                <img src="./assets/ui/appIconDailyUi.png" class="d-block w-100" alt="">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+
+    </section>
+ -->
+
+
+
+
+
+
+
+
+
+    <!-- Section Three - Other Interests -->
+    <!-- <section class="sectionTemplate" id="otherInterestsSection">
             <h2>Other Interests</h2>
             <ul>
                 <li>Baking</li>
@@ -120,46 +252,55 @@
                 <li>Singing</li>
             </ul>
 
-        </section>
+        </section> -->
 
-        <!-- Footer section -->
-        <footer id="footerSection"></footer>
-        <section id="footerSectionOne">
-            <span id="ctaIcon" class="fa-layers fa-fw fa-5x">
-                <i class="fas fa-wine-glass-alt fa-spin"></i>
+    <!-- Footer section -->
+    <footer class="container" id="footerSection">
+
+
+        <!-- ICON SECTION FOR CONTACT ME -->
+        <section id="footerSectionOne" class="sectionTemplate">
+
+            <span id="ctaIcon" class="fa-layers fa-fw fa-4x">
+                <i class="fas fa-wine-glass-alt /*fa-spin*/"></i>
                 <i class="fa-inverse fas  fa-code" data-fa-transform="shrink-4 right-14"
-                    style="color:rgb(172, 165, 165)"></i>
+                    style="color:rgb(38, 165, 197)"></i>
             </span>
 
             <!-- Form Spree Modal -->
-            <h3>CONTACT ME</h3>
-            <form action="">
-                <p>Name: </p>
-                <p>Email:</p>
-                <p>Message:</p>
 
+            <h1>CONTACT ME</h1>
+
+            <form id="contact-me" name="simple-contact-form" accept-charset="utf-8"
+                action="https://formspree.io/msamlafo@gmail.com" method="post">
+            <p><input type="text" name="name" id="name" placeholder="Name"></p>
+            <p><input type="text" name="contactEmail" id="email" placeholder="email"></p>
+            <p><input type="text" name="message" id="message" placeholder="Message" cols="28" rows="10"></p>
+            <button class="submitBtn btn btn-info btn-lg " type="submit" value="Submit"target="blank">Submit</button>
             </form>
+
+
         </section>
 
 
         <hr />
         <!-- Contact Section with icons -->
         <section id="footerSectionTwo">
-            <button class="resumeAndUpButton">Resume</button>
-            <span class="fab fa-linkedin fa-3x resumeAndUpButton"></span>
+            <a href=""><button class="btn btn-info btn-lg resumeBtn">Resume</button></a>
+            <span class="fab fa-linkedin fa-4x" style="color:rgb(38, 165, 197)"></span>
 
-            <span class="fab fa-github-square fa-3x resumeAndUpButton"></span>
+            <span class="fab fa-github-square fa-4x" style="color:rgb(38, 165, 197)"></span>
 
 
         </section>
         <section id="copyrightSection">
-            <button>UP</button>
+            <a href="#profileSectionOne"><button class="btn btn-info btn-lg">UP</button></a>
 
             <p>Copyright © MDS</p>
         </section>
 
 
-        </footer>
+    </footer>
 
 
 
