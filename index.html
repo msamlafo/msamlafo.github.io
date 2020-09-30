@@ -30,11 +30,11 @@
 </head>
 
 <body>
-    <section id="wrapper">
+    <div class="container-fluid m-0 p-0">
 
         <!-- Site navigation -->
 
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,38 +50,52 @@
                         <a class="nav-link" href="#portfolioSectionSites">PORTFOLIO</a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-link" href="#portfolioSectionUin">UI</a>
+                        <a class="nav-link" href="#portfolioSectionUi">UI</a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-link" href="#footerOneSection">CONTACT ME</a>
+                        <a class="nav-link" href="#footerSectionOne">CONTACT ME</a>
                     </li>
                 </ul>
         </nav>
 
         <!-- Header section with Name display -->
         <!-- Parallax -->
-        <section  id="profileSectionOne">
-            <div class="parallax">
+        <section id="profileSectionOne">
+             <div class="parallax">
 
                 <div class="intro">
-                    <h1 class="iM">I'm</h1>
-                    <h1><span class="mansa ">Mansa</span> <span class="s">S</span> <span class="amlafo">amlafo</span>
+                   <h1 class="iM">I'm</h1>
+                    <h1>
+                        <span class="mansa ">Mansa</span> 
+                        <span class="s">S</span> 
+                        <span class="amlafo">amlafo</span>
                     </h1>
                     <p>a develop<em class="er">er</em></p>
-                    <img class="profilePicture" src="assets/circle-croppedMansaProfile.png" alt="Mansa-img">
 
+                    <!-- <img class="profilePicture" src="assets/circle-croppedMansaProfile.png" alt="Mansa-img"> -->
+    
                     <!-- icons below this line. HTML5, CSS, JAVASCRIPT, BOOTSTRAP -->
-                    <span class="fab fa-html5 fa-4x iconHtml"></span>
+                    <!-- <span class="fab fa-html5 fa-4x iconHtml"></span>
                     <span class="fab fa-css3 fa-4x iconCss"></span>
                     <span class="fab fa-js fa-4x iconJs"></span>
-                    <span class="fab fa-bootstrap fa-4x iconBootstrap"></span>
+                    <span class="fab fa-bootstrap fa-4x iconBootstrap"></span> -->
+                    
                 </div>
 
-            </div>
-        </section>
-        <section class="static"> 
+            </div> 
+        </section> 
+        <section class="static">
             <!--  STATIC SECTION OF THE PARLLAX. Padding on this section and 100vh on the parallax class  causes the static section to scroll into the parallax  -->
-            <section id="profileSectionTwo">
+            <div class="profilePic">
+                <!-- icons below this line. HTML5, CSS, JAVASCRIPT, BOOTSTRAP -->
+                <img class="profilePicture" src="assets/circle-croppedMansaProfile.png" alt="Mansa-img">
+                <span class="fab fa-html5 fa-4x iconHtml"></span>
+                <span class="fab fa-css3 fa-4x iconCss"></span>
+                <span class="fab fa-js fa-4x iconJs"></span>
+                <span class="fab fa-bootstrap fa-4x iconBootstrap"></span>
+                <span class="fab fa-github fa-4x iconGithub"></span>
+            </div>
+            <div id="profileSectionTwo">
                 <p>After a attending a free HTML and CSS introductory session with Google, I fell in love with coding. I
                     am currently studying at
                     Eleven Fifty Academy with an expected graduation date of February. In my free time I love to
@@ -90,7 +104,7 @@
                     Looking for a Web-Developer? Contact me lets talk over some <em class="er">freshly</em>
                     baked cookies or some <em class="er">delicious</em> strawberry pie!
                 </p>
-            </section>
+            </div>
 
             <!-- <br /> -->
 
@@ -109,9 +123,9 @@
 
                 <span class="fab fa-bootstrap fa-3x skillsIcon4"></span> -->
 
-            
+
         </section>
-    </section>
+    </div>
 
     <!-- SECTION TWO -->
     <!--PORTFOLIO SITE SECTION-->
@@ -151,7 +165,8 @@
 
             <div class="box-6">
                 <h5>MY FIRST PROFILE SITE</h5>
-                <a href="https://mysite-b0436.firebaseapp.com/"><img class="portfolioImageSet" src="assets/firstProfileSite.png" alt="First-Profile-Site"></a>
+                <a href="https://mysite-b0436.firebaseapp.com/"><img class="portfolioImageSet"
+                        src="assets/firstProfileSite.png" alt="First-Profile-Site"></a>
             </div>
         </div>
 
@@ -236,15 +251,8 @@
  -->
 
 
-
-
-
-
-
-
-
-    <!-- Section Three - Other Interests -->
-    <!-- <section class="sectionTemplate" id="otherInterestsSection">
+        <!-- Section Three - Other Interests -->
+        <!-- <section class="sectionTemplate" id="otherInterestsSection">
             <h2>Other Interests</h2>
             <ul>
                 <li>Baking</li>
@@ -254,53 +262,59 @@
 
         </section> -->
 
-    <!-- Footer section -->
-    <footer class="container" id="footerSection">
+        <!-- Footer section -->
+        <footer class="container" id="footerSection">
 
 
-        <!-- ICON SECTION FOR CONTACT ME -->
-        <section id="footerSectionOne" class="sectionTemplate">
+            <!-- ICON SECTION FOR CONTACT ME -->
+            <section id="footerSectionOne" class="sectionTemplate">
 
-            <span id="ctaIcon" class="fa-layers fa-fw fa-4x">
-                <i class="fas fa-wine-glass-alt /*fa-spin*/"></i>
-                <i class="fa-inverse fas  fa-code" data-fa-transform="shrink-4 right-14"
-                    style="color:rgb(38, 165, 197)"></i>
-            </span>
+                <span id="ctaIcon" class="fa-layers fa-fw fa-4x">
+                    <i class="fas fa-wine-glass-alt /*fa-spin*/"></i>
+                    <i class="fa-inverse fas  fa-code" data-fa-transform="shrink-4 right-14"
+                        style="color:rgb(38, 165, 197)"></i>
+                </span>
 
-            <!-- Form Spree Modal -->
+                <!-- Form Spree Modal -->
 
-            <h1>CONTACT ME</h1>
+                <h1>CONTACT ME</h1>
 
-            <form id="contact-me" name="simple-contact-form" accept-charset="utf-8"
-                action="https://formspree.io/msamlafo@gmail.com" method="post">
-            <p><input type="text" name="name" id="name" placeholder="Name"></p>
-            <p><input type="text" name="contactEmail" id="email" placeholder="email"></p>
-            <p><input type="text" name="message" id="message" placeholder="Message" cols="28" rows="10"></p>
-            <button class="submitBtn btn btn-info btn-lg " type="submit" value="Submit"target="blank">Submit</button>
-            </form>
-
-
-        </section>
-
-
-        <hr />
-        <!-- Contact Section with icons -->
-        <section id="footerSectionTwo">
-            <a href=""><button class="btn btn-info btn-lg resumeBtn">Resume</button></a>
-            <span class="fab fa-linkedin fa-4x" style="color:rgb(38, 165, 197)"></span>
-
-            <span class="fab fa-github-square fa-4x" style="color:rgb(38, 165, 197)"></span>
+                <form id="contact-me" name="simple-contact-form" accept-charset="utf-8"
+                    action="https://formspree.io/msamlafo@gmail.com" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="contactEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="message" placeholder="Message">
+                    </div>
+                    <button class="btn btn-block btn-primary" type="submit" value="Submit">Submit</button>
+                </form>
 
 
-        </section>
-        <section id="copyrightSection">
-            <a href="#profileSectionOne"><button class="btn btn-info btn-lg">UP</button></a>
-
-            <p>Copyright © MDS</p>
-        </section>
+            </section>
 
 
-    </footer>
+            <hr />
+            <!-- Contact Section with icons -->
+            <section id="footerSectionTwo">
+                <a href=""><button class="btn btn-info btn-lg resumeBtn">Resume</button></a>
+                <span class="fab fa-linkedin fa-4x" style="color:rgb(38, 165, 197)"></span>
+
+                <span class="fab fa-github-square fa-4x" style="color:rgb(38, 165, 197)"></span>
+
+
+            </section>
+            <section id="copyrightSection">
+                <a href="#profileSectionOne"><button class="btn btn-info btn-lg">UP</button></a>
+
+                <p>Copyright © MDS</p>
+            </section>
+
+
+        </footer>
 
 
 

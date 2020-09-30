@@ -1,13 +1,15 @@
 body, html {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    /* overflow-x: hidden; */
 }
 
 #wrapper {
     /* height: 100vh; */
     /* width: 100vw; */
-    overflow-x: hidden;
-    perspective: 2px;
+    /* overflow-x: hidden; */
+    /* perspective: 2px; */
 }
 /********** TYPOGRAPHY ***********/
 h1, h2, h3 {
@@ -19,6 +21,8 @@ p, h4 {
 }
 
 .iM {
+    position: relative;
+    padding: 5rem 0 0 5rem;
     font-family: 'Sacramento', cursive;
     font-size: 5rem;
 }
@@ -26,6 +30,8 @@ p, h4 {
 .s {
     font-family: 'Vidaloka', serif;
     font-size: 12rem;
+    position: relative;
+
 }
 
 .amlafo, .mansa, .intro p {
@@ -55,53 +61,72 @@ p, h4 {
 
 .intro p {
     position: relative;
-    left: 320px;
+    padding-left: 320px;
     font-size: 38px;
 }
 
 .er {
     font-size: 50px;
-    
 }
 
-.profilePicture {
+.profilePic {
+    position: relative;
+}
+
+.profilePicture1{
     width: 200px;
     position: relative;
     left: 470px;
     top: 50px;
 }
 
-.iconHtml{
+.profilePicture {
+    width: 200px;
     position: relative;
-    left: 170px;
-    top: 100px;
+    display: block;
+    margin: 0 auto;
+    /* left: 470px; */
+    top: -200px;
+}
+
+.iconHtml{
+    position: absolute;
+    left: calc(25vw - 200px);
+    top: -80px;
 }
 
 .iconCss{
-    position: relative;
-    left: 190px;
-    top: 230px;
+    position: absolute;
+    left: calc(25vw - 150px);
+    top: 0;
 }
 
 .iconJs {
-    position: relative;
-    left: 300px;
-    top: 230px;
+    position: absolute;
+    left: calc(25vw + 100px);
+    top: 0
 }
 
 .iconBootstrap {
-    position: relative;
-    left: 330px;
-    top: 100px;
+    position: absolute;
+    left: calc(25vw + 150px);
+    top: -80px;
+}
+
+.iconGithub {
+    position: absolute;
+    left: calc(25vw - 30px);
+    top: 30px;
 }
 
 /********* PROFILE SECTION **********/
 
 .intro {
     /* color: black; */
-    left: 200px;
+    /* left: 200px; */
     position: relative;
-    top: 100px;
+    padding: 100px auto;
+    /* top: 100px; */
     /* z-index: 3; */
 }
 
@@ -127,6 +152,7 @@ p, h4 {
 /* STATIC SECTION OF THE PARLLAX */  
 .static {
     padding: 100px 25%;
+    margin: 0 auto;
     background-color: rgb(38, 165, 197);
 }
 
@@ -134,10 +160,10 @@ p, h4 {
 /* Navbar */
 
 .navbar {
-    position: fixed;
+    /* position: -webkit-sticky; */
 }
 
-nav.active {
+nav:active {
     background-color: rgba(3, 45, 61, 0.85);
     color: white;
 }
@@ -154,7 +180,7 @@ nav.active {
 .sectionTemplate {
     text-align: center;
     padding: 100px 50px 0;
-    height: 100vh;
+    /* height: 100vh; */
 }    
 
 /* PORTFOLIO ---SITE SECTION ITEMS */
@@ -192,7 +218,7 @@ nav.active {
 @media(min-width: 768px){
 .flexContainer {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }    
@@ -262,7 +288,7 @@ nav.active {
 
 }
 
-input {
+/* input {
     padding: 1em;
     width: 84.4vw;
     background: #ccc;
@@ -272,8 +298,8 @@ input {
     font-size: 1em;
     display:flex;
     /* align-items: flex-start; */
-    margin: 50px -273px;
-}
+    /* margin: 50px -273px; */
+} */
 
 
 /* RESUME BUTTON */
