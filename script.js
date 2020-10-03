@@ -18,23 +18,16 @@
 //     console.log('me, me, me');
 // }
 
-let last_known_scroll_position = 0;
-let ticking = false;
-
-function doSomething(scroll_pos) {
-    //console.log(scroll_pos);
-    console.log('me, me, me');
+function myFunction() {
+  // console.log(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50);
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector('nav').classList.add('bg-dark');
+  }
+  else{
+      document.querySelector('nav').classList.remove('bg-dark');
+  }
 }
 
-window.addEventListener('scroll', function(e) {
-  last_known_scroll_position = window.scrollY;
-
-  if (!ticking) {
-    window.requestAnimationFrame(function() {
-      doSomething(last_known_scroll_position);
-      ticking = false;
-    });
-
-    ticking = true;
-  }
-});
+window.onscroll = function () {
+  myFunction();
+};

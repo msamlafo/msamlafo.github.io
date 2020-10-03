@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -6,11 +7,14 @@ body, html {
 }
 
 /********** TYPOGRAPHY ***********/
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Vidaloka', serif;
 }
 
-p, h4 {
+p,
+h4 {
     font-family: 'Assistant', sans-serif;
 }
 
@@ -28,11 +32,14 @@ p, h4 {
 
 }
 
-.amlafo, .mansa, .intro p {
+.amlafo,
+.mansa,
+.intro p {
     font-family: 'Vidaloka', serif;
 }
 
-#profileSectionTwo p, #portfolioSectionUi p {
+#profileSectionTwo p,
+#portfolioSectionUi p {
     font-family: 'Assistant', sans-serif;
     font-size: 20px;
     color: rgb(70, 56, 56);
@@ -67,7 +74,7 @@ p, h4 {
     position: relative;
 }
 
-.profilePicture1{
+.profilePicture1 {
     width: 200px;
     position: relative;
     left: 470px;
@@ -83,13 +90,13 @@ p, h4 {
     top: -200px;
 }
 
-.iconHtml{
+.iconHtml {
     position: absolute;
     left: calc(25vw - 200px);
     top: -80px;
 }
 
-.iconCss{
+.iconCss {
     position: absolute;
     left: calc(25vw - 150px);
     top: 0;
@@ -125,7 +132,7 @@ p, h4 {
 }
 
 /* PARALLAX */
-#profileSectionOne{
+#profileSectionOne {
     position: relative;
     /* height: 100vh; */
     color: black;
@@ -140,21 +147,14 @@ p, h4 {
     background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1181&q=80);
 }
-  
 
 
-/* STATIC SECTION OF THE PARLLAX */  
+
+/* STATIC SECTION OF THE PARLLAX */
 .static {
     padding: 100px 25%;
     margin: 0 auto;
     background-color: rgb(38, 165, 197);
-}
-
-
-/* Navbar */
-nav:active {
-    background-color: rgba(3, 45, 61, 0.85);
-    color: white;
 }
 
 
@@ -164,31 +164,81 @@ nav:active {
 #portfolioSectionSites {
     background-color: rgb(218, 228, 231);
     color: rgb(70, 56, 56);
-}    
+}
 
 .sectionTemplate {
     text-align: center;
     padding: 100px 50px 0;
     /* height: 100vh; */
-}    
+}
 
 /* PORTFOLIO ---SITE SECTION ITEMS */
 
-.box-1 {
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid transparent;
+    perspective: 1000px;
+    margin-bottom: 80px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    padding: 20px 5px;
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* .box-1 {
     order: 5;
-}    
+}     */
 
 .box-2 {
     order: 4;
-}    
+}
 
 .box-3 {
-     order: 3;
-}     
+    order: 3;
+}
 
-.box-4{
+.box-4 {
     order: 2;
-}   
+}
 
 .box-5 {
     order: 6;
@@ -200,84 +250,87 @@ nav:active {
 
 .portfolioImageSet {
     width: 200px;
-    
-}    
 
-/* PORTFOLIO ---UI IMAGES */
-@media(min-width: 768px){
-.flexContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}    
 }
 
-.flexContainer div {
+/* .flexContainer div {
     border: solid #ccc 5px;
     padding: 15px;
     flex-basis: 5%; 
     margin: 50px;
-}    
+}     */
 
-#portfolioSectionUi {
-    background-color: rgb(38, 165, 197);
-    padding-bottom: 100px;
-}    
-
-#portfolioSectionSites h1, #portfolioSectionUi h1, #footerSectionOne h1{
-    padding-bottom: 70px;
-    color: rgb(70, 56, 56);
-
-}    
-
-.uiImages {
-    width: 200px;
-    /* height: 175px; */
-    margin-left: 20px;
-    margin-bottom: 50px;
-    
-}    
+/* PORTFOLIO ---UI IMAGES */
+@media(min-width: 768px) {
+    .flexContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
 
 
-/* FOOTER SECTION ONE */
+    #portfolioSectionUi {
+        background-color: rgb(38, 165, 197);
+        padding-bottom: 100px;
+    }
+
+    #portfolioSectionSites h1,
+    #portfolioSectionUi h1,
+    #footerSectionOne h1 {
+        padding-bottom: 70px;
+        color: rgb(70, 56, 56);
+
+    }
+
+    .uiImages {
+        width: 400px;
+        /* height: 175px; */
+        margin-left: 20px;
+        margin-bottom: 50px;
+
+    }
 
 
-/* #footerSectionOne {
+
+    /* FOOTER SECTION ONE */
+
+
+    /* #footerSectionOne {
     background-color: rgba(38, 165, 197);
     padding: 100px 300px 0;
     
 } */
 
-#ctaIcon {
-    display: inline-block;
-    color: rgb(38, 165, 197)
-}
+    #ctaIcon {
+        display: inline-block;
+        color: rgb(38, 165, 197)
+    }
 
-#footerSectionOne h1 {
-    display: inline-block;
-    left: 60px;
-    position: relative;
-    
-}
+    #footerSectionOne h1 {
+        display: inline-block;
+        left: 60px;
+        position: relative;
 
-.submitBtn {
-    padding: 20px 30px;
-}
+    }
+
+    .submitBtn {
+        padding: 20px 30px;
+    }
 
 
 
-/* FOOTER SECTION TWO */
-#footerSectionTwo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 100px 30%;
+    /* FOOTER SECTION TWO */
+    #footerSectionTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 100px 30%;
 
-}
+    }
 
-/* input {
+    /* input {
     padding: 1em;
     width: 84.4vw;
     background: #ccc;
@@ -291,8 +344,8 @@ nav:active {
 } */
 
 
-/* RESUME BUTTON */
-/* .resumeBtn {
+    /* RESUME BUTTON */
+    /* .resumeBtn {
     background: #34d9b8;
     background-image: -webkit-linear-gradient(top, #34d9b8, #7f2bb8);
     background-image: -moz-linear-gradient(top, #34d9b8, #7f2bb8);
@@ -320,14 +373,14 @@ nav:active {
     text-decoration: none;
   } */
 
-/* CONTACT ME SECTION */
+    /* CONTACT ME SECTION */
 
 
-/* COPY RIGHT SECTION */
-#copyrightSection {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 100px  50px 100px;
-    background-color: rgb(38, 165, 197);
-}
+    /* COPY RIGHT SECTION */
+    #copyrightSection {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 100px 50px 100px;
+        background-color: rgb(38, 165, 197);
+    }
