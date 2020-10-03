@@ -177,7 +177,7 @@ h4 {
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 200px;
+    height: 300px;
     border: 1px solid transparent;
     perspective: 1000px;
     margin-bottom: 80px;
@@ -218,35 +218,13 @@ h4 {
 
 /* Style the back side */
 .flip-card-back {
-    padding: 20px 5px;
-    background-color: dodgerblue;
-    color: white;
+    padding: 80px 5px;
+    background-color: rgb(38, 165, 197);
+    color: rgb(70, 56, 56);
     transform: rotateY(180deg);
+    margin: auto;
 }
 
-/* .box-1 {
-    order: 5;
-}     */
-
-.box-2 {
-    order: 4;
-}
-
-.box-3 {
-    order: 3;
-}
-
-.box-4 {
-    order: 2;
-}
-
-.box-5 {
-    order: 6;
-}
-
-.box-6 {
-    order: 1;
-}
 
 .portfolioImageSet {
     width: 200px;
@@ -342,36 +320,6 @@ h4 {
     lign-items: flex-start;
     margin: 50px -273px;
 } */
-
-
-    /* RESUME BUTTON */
-    /* .resumeBtn {
-    background: #34d9b8;
-    background-image: -webkit-linear-gradient(top, #34d9b8, #7f2bb8);
-    background-image: -moz-linear-gradient(top, #34d9b8, #7f2bb8);
-    background-image: -ms-linear-gradient(top, #34d9b8, #7f2bb8);
-    background-image: -o-linear-gradient(top, #34d9b8, #7f2bb8);
-    background-image: linear-gradient(to bottom, #34d9b8, #7f2bb8);
-    -webkit-border-radius: 11;
-    -moz-border-radius: 11;
-    border-radius: 11px;
-    text-shadow: 1px 1px 3px #666666;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 25px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .resumeBtn:hover {
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-    text-decoration: none;
-  } */
 
     /* CONTACT ME SECTION */
 
