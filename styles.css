@@ -120,6 +120,18 @@ h4 {
     top: 30px;
 }
 
+.iconReact {
+    position: absolute;
+    left: calc(25vw - 100px);
+    top: 120px;
+}
+
+.iconNodeJs {
+    position: absolute;
+    left: calc(25vw + 50px);
+    top: 120px;
+}
+
 /********* PROFILE SECTION **********/
 
 .intro {
@@ -263,7 +275,7 @@ h4 {
     }
 
     .uiImages {
-        width: 400px;
+        width: 60%;
         /* height: 175px; */
         margin-left: 20px;
         margin-bottom: 50px;
@@ -277,9 +289,9 @@ h4 {
 
     /* #footerSectionOne {
     background-color: rgba(38, 165, 197);
-    padding: 100px 300px 0;
+    padding: 100px 300px 0;*/
     
-} */
+} 
 
     #ctaIcon {
         display: inline-block;
