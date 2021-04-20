@@ -1,246 +1,239 @@
 body,
 html {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  /* overflow-x: hidden; */
 }
 
 /********** TYPOGRAPHY ***********/
 h1,
 h2,
 h3 {
-    font-family: 'Vidaloka', serif;
+  font-family: 'Vidaloka', serif;
 }
 
 p,
 h4 {
-    font-family: 'Assistant', sans-serif;
+  font-family: 'Assistant', sans-serif;
 }
 
 .iM {
-    position: relative;
-    padding: 5rem 0 0 5rem;
-    font-family: 'Sacramento', cursive;
-    font-size: 5rem;
+  position: relative;
+  padding: 5rem 0 0 5rem;
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
 }
 
 .s {
-    font-family: 'Vidaloka', serif;
-    font-size: 12rem;
-    position: relative;
-
+  font-family: 'Vidaloka', serif;
+  font-size: 12rem;
+  position: relative;
 }
 
 .amlafo,
 .mansa,
 .intro p {
-    font-family: 'Vidaloka', serif;
+  font-family: 'Vidaloka', serif;
 }
 
 #profileSectionTwo p,
 #portfolioSectionUi p {
-    font-family: 'Assistant', sans-serif;
-    font-size: 20px;
-    color: rgb(70, 56, 56);
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  color: rgb(70, 56, 56);
 }
 
 /* *************Styling SectionOne********* */
 
-
 .mansa {
-    position: relative;
-    left: 210px;
-    top: -70px;
+  position: relative;
+  left: 210px;
+  top: -70px;
 }
 
 .amlafo {
-    position: relative;
-    left: -10px;
-    top: -20px;
+  position: relative;
+  left: -10px;
+  top: -20px;
 }
 
 .intro p {
-    position: relative;
-    padding-left: 320px;
-    font-size: 38px;
+  position: relative;
+  padding-left: 320px;
+  font-size: 38px;
 }
 
 .er {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .profilePic {
-    position: relative;
+  position: relative;
 }
 
 .profilePicture1 {
-    width: 200px;
-    position: relative;
-    left: 470px;
-    top: 50px;
+  width: 200px;
+  position: relative;
+  left: 470px;
+  top: 50px;
 }
 
 .profilePicture {
-    width: 200px;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    /* left: 470px; */
-    top: -200px;
+  width: 200px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  /* left: 470px; */
+  top: -200px;
 }
 
 .iconHtml {
-    position: absolute;
-    left: calc(25vw - 200px);
-    top: -80px;
+  position: absolute;
+  left: calc(25vw - 200px);
+  top: -80px;
 }
 
 .iconCss {
-    position: absolute;
-    left: calc(25vw - 150px);
-    top: 0;
+  position: absolute;
+  left: calc(25vw - 150px);
+  top: 0;
 }
 
 .iconJs {
-    position: absolute;
-    left: calc(25vw + 100px);
-    top: 0
+  position: absolute;
+  left: calc(25vw + 100px);
+  top: 0;
 }
 
 .iconBootstrap {
-    position: absolute;
-    left: calc(25vw + 150px);
-    top: -80px;
+  position: absolute;
+  left: calc(25vw + 150px);
+  top: -80px;
 }
 
 .iconGithub {
-    position: absolute;
-    left: calc(25vw - 30px);
-    top: 30px;
+  position: absolute;
+  left: calc(25vw - 30px);
+  top: 30px;
 }
 
 .iconReact {
-    position: absolute;
-    left: calc(25vw - 100px);
-    top: 120px;
+  position: absolute;
+  left: calc(25vw - 100px);
+  top: 120px;
 }
 
 .iconNodeJs {
-    position: absolute;
-    left: calc(25vw + 50px);
-    top: 120px;
+  position: absolute;
+  left: calc(25vw + 50px);
+  top: 120px;
 }
 
 /********* PROFILE SECTION **********/
 
 .intro {
-    /* color: black; */
-    /* left: 200px; */
-    position: relative;
-    padding: 100px auto;
-    /* top: 100px; */
-    /* z-index: 3; */
+  /* color: black; */
+  /* left: 200px; */
+  position: relative;
+  padding: 100px auto;
+  /* top: 100px; */
+  /* z-index: 3; */
 }
 
 /* PARALLAX */
 #profileSectionOne {
-    position: relative;
-    /* height: 100vh; */
-    color: black;
-    text-shadow: 0 0 5px #000;
+  position: relative;
+  /* height: 100vh; */
+  color: black;
+  text-shadow: 0 0 5px #000;
 }
 
 .parallax {
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1181&q=80);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1181&q=80);
 }
-
-
 
 /* STATIC SECTION OF THE PARLLAX */
 .static {
-    padding: 100px 25%;
-    margin: 0 auto;
-    background-color: rgb(38, 165, 197);
+  padding: 100px 25%;
+  margin: 0 auto;
+  background-color: rgb(38, 165, 197);
 }
-
 
 /* ***************STYLING SECTION 2**************** */
 
 /** PORTFOLIO SITE SECTION **/
 #portfolioSectionSites {
-    background-color: rgb(218, 228, 231);
-    color: rgb(70, 56, 56);
+  background-color: rgb(218, 228, 231);
+  color: rgb(70, 56, 56);
 }
 
 .sectionTemplate {
-    text-align: center;
-    padding: 100px 50px 0;
-    /* height: 100vh; */
+  text-align: center;
+  padding: 100px 50px 0;
+  /* height: 100vh; */
 }
 
 /* PORTFOLIO ---SITE SECTION ITEMS */
 
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    border: 1px solid transparent;
-    perspective: 1000px;
-    margin-bottom: 80px;
-    /* Remove this if you don't want the 3D effect */
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid transparent;
+  perspective: 1000px;
+  margin-bottom: 80px;
+  /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: #bbb;
-    color: black;
+  background-color: #bbb;
+  color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-    padding: 80px 5px;
-    background-color: rgb(38, 165, 197);
-    color: rgb(70, 56, 56);
-    transform: rotateY(180deg);
-    margin: auto;
+  padding: 80px 5px;
+  background-color: rgb(38, 165, 197);
+  color: rgb(70, 56, 56);
+  transform: rotateY(180deg);
+  margin: auto;
 }
 
-
 .portfolioImageSet {
-    width: 200px;
-
+  width: 200px;
 }
 
 /* .flexContainer div {
@@ -251,76 +244,68 @@ h4 {
 }     */
 
 /* PORTFOLIO ---UI IMAGES */
-@media(min-width: 768px) {
-    .flexContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+/* @media (min-width: 768px) { */
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+#portfolioSectionUi {
+  background-color: rgb(38, 165, 197);
+  padding-bottom: 100px;
+}
 
+#portfolioSectionSites h1,
+#portfolioSectionUi h1,
+#footerSectionOne h1 {
+  padding-bottom: 70px;
+  color: rgb(70, 56, 56);
+}
 
-    #portfolioSectionUi {
-        background-color: rgb(38, 165, 197);
-        padding-bottom: 100px;
-    }
+.uiImages {
+  width: 400px;
+  /* height: 175px; 
+  margin-left: 20px;
+  margin-bottom: 50px;
+  */
+}
 
-    #portfolioSectionSites h1,
-    #portfolioSectionUi h1,
-    #footerSectionOne h1 {
-        padding-bottom: 70px;
-        color: rgb(70, 56, 56);
+/* FOOTER SECTION ONE */
 
-    }
-
-    .uiImages {
-        width: 400px;
-        /* height: 175px; */
-        margin-left: 20px;
-        margin-bottom: 50px;
-
-    }
-
-
-
-    /* FOOTER SECTION ONE */
-
-
-    /* #footerSectionOne {
+/* #footerSectionOne {
     background-color: rgba(38, 165, 197);
     padding: 100px 300px 0;*/
-    
-} 
+/* } */
 
-    #ctaIcon {
-        display: inline-block;
-        color: rgb(38, 165, 197)
-    }
+#ctaIcon {
+  display: inline-block;
+  color: rgb(38, 165, 197);
+}
 
-    #footerSectionOne h1 {
-        display: inline-block;
-        left: 60px;
-        position: relative;
+#footerSectionOne h1 {
+  display: inline-block;
+  left: 60px;
+  position: relative;
+}
 
-    }
+.submitBtn {
+  padding: 20px 30px;
+}
 
-    .submitBtn {
-        padding: 20px 30px;
-    }
+/* FOOTER SECTION TWO */
+#footerSectionTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 100px 30%;
+  align-items: center;
+  gap: 20px;
+}
 
-
-
-    /* FOOTER SECTION TWO */
-    #footerSectionTwo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 100px 30%;
-
-    }
-
-    /* input {
+/* input {
     padding: 1em;
     width: 84.4vw;
     background: #ccc;
@@ -333,14 +318,11 @@ h4 {
     margin: 50px -273px;
 } */
 
-    /* CONTACT ME SECTION */
+/* CONTACT ME SECTION */
 
-
-    /* COPY RIGHT SECTION */
-    #copyrightSection {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 100px 50px 100px;
-        background-color: rgb(38, 165, 197);
-    }
+/* COPY RIGHT SECTION */
+#copyrightSection {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
